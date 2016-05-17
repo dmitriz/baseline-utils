@@ -8,9 +8,11 @@
     "url": "https://github.com/dmitriz/baseline2padding"
   },
   "scripts": {
-    "start": "nr dev",
+    "start": "karma start",
+    "test": "karma start",
     "dev": "open http://localhost:8080/ && webpack-dev-server",
-    "test": "karma start"
+    "pub": "npm version patch && npm publish && git push",
+    "sync": "git ac && git pull --rebase && git push"
   },
   "keywords": [
     "css",
