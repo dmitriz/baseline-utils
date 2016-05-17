@@ -1,8 +1,11 @@
 // box-offset_test.js
 
-var fromEdge = require('./box-offset.js').fromEdge
+var box = require('./box-offset.js')
 
-describe('Compute distance from the box Edge', function () {
+var fromEdge = box.fromEdge
+var offset = box.offset
+
+describe('Distance from the box Edge', function () {
 	it('should be 0 when desired distance and offset are 0', function () {
 		expect(fromEdge(0, 0)).toBe(0)
 	})
@@ -17,5 +20,14 @@ describe('Compute distance from the box Edge', function () {
 	it('should reduce the desired distance by the offset', function () {
 		expect(fromEdge(1.12, 1.12)).toBe(0)
 		expect(fromEdge(4.12, 1.13)).toBe(2.99)
+	})
+})
+
+describe('Total bottom offset', function () {
+	it('should be 0 when line-height is 1 and base offset is 0', function () {
+		expect(offset(1, 0)).toBe(0)
+	})
+	it('should equal half-leading when base offset is 0', function () {
+		expect(offset(2, 0)).toBe(0.5)
 	})
 })
