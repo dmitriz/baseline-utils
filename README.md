@@ -1,4 +1,4 @@
-# baseline2padding
+# baseline-utils
 Convert the more important but less accessible Baseline into the less important but more accessible CSS
 
 
@@ -25,7 +25,7 @@ Convert the more important but less accessible Baseline into the less important 
 |           \                          /        /              /
 |        fontbox-top-to-baseline      /        /              / 
 |           /                        /        /              /
--- Baseline -------------------------------------------------
+----------------------------------------- Baseline ----------
 |           \                        \        \              \
 |        fontbox-bottom-to-baseline   \        \              \
 |           /                          \        \              \
@@ -47,6 +47,73 @@ Convert the more important but less accessible Baseline into the less important 
 |           /                                                /
 -- Margin box bottom edge -----------------------------------
 ```
+
+
+## Vertical Rhythm
+```
+---- Padding box edge ------------------
+|           \                           \
+|            \                           \
+|             \                           \
+|        padding-top-to-baseline    = line-height x 2
+|             /                           /
+|            /                           /
+|           /                           /
+-- <h2> --------------------------------------- baseline
+|           \                           \
+|            \                           \
+|             \                           \
+|        padding-bottom-to-baseline = line-height x 2
+|             /                           /
+|            /                           /
+|           /                           /
+----- Padding box edge -----------------
+|           \                           \
+|        padding-top-to-baseline    = line-height
+|           /                           /           
+-- <h3> --------------------------------------- baseline
+|           \                           \   
+|        padding-bottom-to-baseline = line-height    
+|           /                           /
+----- Padding box edge -----------------           
+|           \                           \
+|        padding-top-to-baseline    = line-height
+|           /                           /
+-- <p> line 1 --------------------------------- baseline
+|                                       \
+|                                     line-height
+|                                       /
+-- <p> line 2 --------------------------------- baseline
+|           \                           \
+|        padding-bottom-to-baseline = line-height
+|           /                           /
+---- Padding box edge ------------------           
+|           \                           \
+|        padding-top-to-baseline    = line-height
+|           /                           /
+-- <p> line 1 --------------------------------- baseline
+|                                       \
+|                                     line-height
+|                                       /
+-- <p> line 2 --------------------------------- baseline
+|           \                           \
+|        padding-bottom-to-baseline = line-height
+|           /                           /
+---- Padding box edge ------------------
+|           \                           \
+|            \                           \
+|             \                           \
+|        padding-top-to-baseline    = line-height x 2  
+|             /                           / 
+|            /                           /
+|           /                           /
+-- <h3> --------------------------------------- baseline
+|           \                           \
+|        padding-bottom-to-baseline = line-height
+|           /                           /
+---- Padding box edge ------------------
+```
+
 
 
 ## Distance conversion diagram
