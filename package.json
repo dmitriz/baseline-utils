@@ -1,11 +1,11 @@
 {
   "version": "0.1.1",
-  "name": "baseline2padding",
+  "name": "baseline-utils",
   "main": "index.js",
   "description": "Converts the more important but less accessible Baseline into the less important but more accessible Padding",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmitriz/baseline2padding"
+    "url": "https://github.com/dmitriz/baseline-padding"
   },
   "scripts": {
     "start": "karma start",
@@ -36,9 +36,9 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/dmitriz/baseline2padding/issues"
+    "url": "https://github.com/dmitriz/baseline-padding/issues"
   },
-  "homepage": "https://github.com/dmitriz/baseline2padding#readme",
+  "homepage": "https://github.com/dmitriz/baseline-padding#readme",
   "dependencies": {
     "better-math": "^1.4.2",
     "lodash": "^4.12.0"
