@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "baseline2padding",
   "main": "index.js",
   "description": "Converts the more important but less accessible Baseline into the less important but more accessible Padding",
