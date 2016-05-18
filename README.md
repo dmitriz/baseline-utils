@@ -4,6 +4,7 @@ Convert the more important but less accessible Baseline into the less important 
 
 ## Vertical box layout
 
+```
 -- Margin box top edge --------------------------------------
 |           \                                                \
 |         margin-top                                          \
@@ -45,6 +46,7 @@ Convert the more important but less accessible Baseline into the less important 
 |        margin-bottom                                        /
 |           /                                                /
 -- Margin box bottom edge -----------------------------------
+```
 
 
 ## Distance conversion diagram
