@@ -8,20 +8,29 @@ http://www.leabhair.ie/sob/tm/index.html
 ![](http://www.leabhair.ie/sob/tm/tm1.jpg)
 
 ```
--- ascender line ---------------
-|                   \           \
-|               ascender-height  \
-|                   /             \
--- mean line -------               \
-|                   \               \
-|               x-height        body size
-|                   /               /
--- baseline --------               /
-|                   \             /
-|               descender-height /
-|                   /           /
--- descender line --------------
+  === What you want to control ========== | === What you can control ===
+
+-- Line box top edge ---------------------|-------------------
+|                                         |     \             \
+|                                         |     half-leading   \
+-- ascender line ---------------          |     /               \  
+|                   \           \ --------|- Em box top edge     \
+|               ascender-height  \        |     \                 \
+|                   /             \       |      \                 \
+-- mean line -------               \      |       \                 \
+|                   \               \     |        \                 \
+|               x-height        body size |     font-size      line-height
+|                   /               /     |        /                 /
+-- baseline --------               /      |       /                 /
+|                   \             /       |      /                 /
+|               descender-height /        |     /                 /
+|                   /           / --------|-- Em box bottom edge /
+-- descender line --------------          |     \               /
+|                                         |     half-leading   /
+|                                         |     /             /
+-- Line box bottom edge ------------------|-------------------
 ```
+
 
 ## Vertical box layout
 
@@ -42,7 +51,7 @@ http://www.leabhair.ie/sob/tm/index.html
 |           \                            \          /              /
 |        half-leading   padding-top-to-baseline    /              /
 |           /                            /        /              /
--- Font box top edge                    /        /              /
+-- Em box top edge                      /        /              /
 |           \                          /        /              /
 |        fontbox-top-to-baseline      /        /              / 
 |           /                        /        /              /
@@ -50,7 +59,7 @@ http://www.leabhair.ie/sob/tm/index.html
 |           \                        \        \              \
 |        fontbox-bottom-to-baseline   \        \              \
 |           /                          \        \              \
--- Font box bottom edge                 \        \              \
+-- Em box bottom edge                   \        \              \
 |           \                            \        \              \
 |        half-leading   padding-bottom-to-baseline \              \
 |           /                            /          \              \
