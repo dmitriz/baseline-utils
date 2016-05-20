@@ -8,7 +8,7 @@ http://www.leabhair.ie/sob/tm/index.html
 ![](http://www.leabhair.ie/sob/tm/tm1.jpg)
 
 ```
-  === What you want to control ========== | === What you can control ===
+======  What you want to control  ======  |  ===  What you can control  ===
 
 -- Line box top edge ---------------------|-------------------
 |                                         |     \             \
