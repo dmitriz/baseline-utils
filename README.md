@@ -4,6 +4,7 @@ Convert the more important but less accessible Baseline into the less important 
 
 ## Typeface pivot lines
 http://www.leabhair.ie/sob/tm/index.html
+
 ![](http://www.leabhair.ie/sob/tm/tm1.jpg)
 
 ```
