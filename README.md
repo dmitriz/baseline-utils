@@ -2,6 +2,26 @@
 Convert the more important but less accessible Baseline into the less important but more accessible CSS
 
 
+## Typeface pivot lines
+http://www.leabhair.ie/sob/tm/index.html
+![](http://www.leabhair.ie/sob/tm/tm1.jpg)
+
+```
+-- ascender line ---------------
+|                   \           \
+|               ascender-height  \
+|                   /             \
+-- mean line -------               \
+|                   \               \
+|               x-height        body size
+|                   /               /
+-- baseline --------               /
+|                   \             /
+|               descender-height /
+|                   /           /
+-- descender line --------------
+```
+
 ## Vertical box layout
 
 ```
@@ -59,7 +79,7 @@ Convert the more important but less accessible Baseline into the less important 
 |             /                           /
 |            /                           /
 |           /                           /
--- <h2> --------------------------------------- baseline
+-- <h2> --------------------------------------------- baseline
 |           \                           \
 |            \                           \
 |             \                           \
@@ -71,7 +91,7 @@ Convert the more important but less accessible Baseline into the less important 
 |           \                           \
 |        padding-top-to-baseline    = line-height
 |           /                           /           
--- <h3> --------------------------------------- baseline
+-- <h3> --------------------------------------------- baseline
 |           \                           \   
 |        padding-bottom-to-baseline = line-height    
 |           /                           /
@@ -79,11 +99,11 @@ Convert the more important but less accessible Baseline into the less important 
 |           \                           \
 |        padding-top-to-baseline    = line-height
 |           /                           /
--- <p> line 1 --------------------------------- baseline
+-- <p> line 1 --------------------------------------- baseline
 |                                       \
 |                                     line-height
 |                                       /
--- <p> line 2 --------------------------------- baseline
+-- <p> line 2 --------------------------------------- baseline
 |           \                           \
 |        padding-bottom-to-baseline = line-height
 |           /                           /
@@ -91,11 +111,11 @@ Convert the more important but less accessible Baseline into the less important 
 |           \                           \
 |        padding-top-to-baseline    = line-height
 |           /                           /
--- <p> line 1 --------------------------------- baseline
+-- <p> line 1 --------------------------------------- baseline
 |                                       \
 |                                     line-height
 |                                       /
--- <p> line 2 --------------------------------- baseline
+-- <p> line 2 --------------------------------------- baseline
 |           \                           \
 |        padding-bottom-to-baseline = line-height
 |           /                           /
@@ -107,7 +127,7 @@ Convert the more important but less accessible Baseline into the less important 
 |             /                           / 
 |            /                           /
 |           /                           /
--- <h3> --------------------------------------- baseline
+-- <h3> --------------------------------------------- baseline
 |           \                           \
 |        padding-bottom-to-baseline = line-height
 |           /                           /
