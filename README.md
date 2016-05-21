@@ -10,21 +10,22 @@ http://www.leabhair.ie/sob/tm/index.html
 ```
 ======  What you want to control  ======  |  ===  What you can control  ===
 
+
 ------------------------------------------|-- Line box top edge -----
 |                                         |       \                  \
 |                                         |       half-leading        \
 -- ascender line ---------------          |       /                    \  
-|                   \           \ --------|-- Em box top edge           \
+|                   \           \     ??--|-- Em box top edge           \
 |               ascender-height  \        |       \                      \
 |                   /             \       |        \                      \
 -- mean line -------               \      |         \                      \
 |                   \               \     |          \                      \
-|               x-height        body size |       font-size             line-height
+|               x-height        body-size |       font-size             line-height
 |                   /               /     |          /                      /
--- baseline --------               /      |         /                      /
+-- base line -------               /      |         /                      /
 |                   \             /       |        /                      /
 |               descender-height /        |       /                      /
-|                   /           / --------|-- Em box bottom edge        /
+|                   /           /     ??--|-- Em box bottom edge        /
 -- descender line --------------          |       \                    /
 |                                         |       half-leading        /
 |                                         |       /                  /
