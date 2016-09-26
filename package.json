@@ -41,7 +41,7 @@
   "homepage": "https://github.com/dmitriz/baseline-padding#readme",
   "dependencies": {
     "better-math": "^1.4.3",
-    "lodash": "^4.12.0"
+    "lodash": "^4.16.2"
   },
   "devDependencies": {
     "min-karma-webpack": "^1.0.2"
