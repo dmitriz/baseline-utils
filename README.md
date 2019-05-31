@@ -1,4 +1,7 @@
 # baseline-utils
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/dmitriz/baseline-utils.svg)](https://greenkeeper.io/)
+
 Convert the more important but less accessible Baseline into the less important but more accessible CSS
 
 
